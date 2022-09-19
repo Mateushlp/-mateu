@@ -5,69 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <h1>Studi<span>on</span><span>Eventos</span></h1>
-        <ul>
-            <li>
-                <a href="#empresa">
-                    Empresa
-                </a>
-            </li>
-            <li>
-                <a href="#eventos">
-                    Eventos
-                </a>
-            </li>
-            <li>
-                <a href="#galeria">
-                    Galeria
-                </a>
-            </li>
-            <li>
-                <a href="#depoimentos">
-                    Depoimentos
-                </a>
-            </li>
-            <li>
-                <a href="#contatos">
-                    Contatos
-                </a>
-            </li>
-        </ul>
+    <nav class="navbar">
+        <div class="container navbar--container">
+            <h1 class="logo-studion">Studi<span class="copy--primary">on</span>
+                <span class="logo-studion_subtitlle">Eventos</span>
+            </h1>
+            <ul class="navbar_links">
+
+
+                <li>
+                    <a href="enterprise.html">
+                        Empresa
+                    </a>
+                </li>
+                <li>
+                    <a href="events.html">
+                        Eventos
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        Galeria
+                    </a>
+                </li>
+                <li>
+                    <a href="testimonials.html">
+                        Depoimentos
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contatos
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <header>
-        <div id="slider">
+        <div id="slide">
             <div class="slide">
-                <h6><span>Proximo Evento</span> - Dia 25 de setembro as 19Hrs</h6>
-                <h2><span>Creative </span> Minds</h2>
-                <button>Saiba Mais</button>
+                <img class="slide_background-image" src="./images/banner.jpg" alt="Studion Banner" />
+                <div class="slide_copy">
+                    <h6><span class="copy--primary">Proximo Evento</span> - Dia 25 de setembro as 19Hrs</h6>
+                    <h2><span class="copy--primary">Creative </span> Minds</h2>
+                    <button class="btn btn--slide">Saiba Mais</button>
+
+                </div>
             </div>
 
         </div>
 
     </header>
     <main>
-        <section>
-            <ul>
+        <section id="counter">
+            <ul class="container counter_container">
                 <li>
-                    <h3>+ de 500</h3>eventos realizados
+                    <h3>
+                        + de 500
+                        <small>
+                            eventos realizados
+                        </small>
+                    </h3>
                 </li>
                 <li>
-                    <h3> + de 1.000.000 </h3>de ingressos vendidos
+                    <h3>
+                        + de 1.000.000
+                        <small>
+                            de ingressos vendidos
+                        </small>
+                    </h3>
                 </li>
                 <li>
-                    <h3> + de 300</h3>empresas atendidas
+                    <h3>
+                        + de 300
+                        <small>
+                            empresas atendidas
+
+                        </small>
+
+                    </h3>
                 </li>
             </ul>
 
         </section>
-        <section id="teste">
+        <section class="institutional">
+            <img class="institutional_image" src="./images/institutional.jpg" alt="Studion institutional" />
             <div>
-                <img src="./images/institutional.jpg" alt="" />
+
 
                 <h6>Fazemos seu evento acontecer</h6>
                 <h4>O Lorem Ipsum é um texto mode</h4>
@@ -76,36 +105,68 @@
                     clássica em Latim,de 45 AC, tornando-o com mais de 2000 anos. Richard McClintock,
                     um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das
                     palavras em Latim mais obscuras (consectetur) numa pass</p>
-                <button>Saiba Mais</button>
+                <button class="btn btn-institutional">Saiba Mais</button>
             </div>
         </section>
-        <section>
-            <div>
-                <h6>Voce inova a tematica e nois planejamos um
-                    evento com tecnologia e</h6>
+        <section class="quote">
+            <div class="container quote_container">
+                <div class="quote_copy">
 
-                <h2><span>MUITO+ </span>DIVERSAO</h2>
-                <button>FAZER COTAÇAO</button>
+                    <h6>Voce inova a tematica e nois planejamos um
+                        evento com tecnologia e</h6>
+
+                    <h2><span class="copy--primary">MUITO+ </span>DIVERSAO</h2>
+                    <button class="btn btn--quote">FAZER COTAÇAO</button>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <h2>Studi<span>on</span><span>Eventos</span></h2>
-        <form>
-            <label>receba news e promoçoes </label>
-            <input type="email" placeholder="email" />
-            <button type="submit">Enviar</button>
-        </form>
-        <ul>
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="container footer_container">
+
+            <h2 class="logo-studion">
+                Studi<span class="copy--primary">on</span>
+                <span class="logo-studion_subtitlle">Eventos</span>
+            </h2>
+            <form class="footer_form">
+                <label for="email">receba news e promoçoes </label>
+                <div class="footer_email">
+                    <input id="email" type="email" placeholder="email" />
+                    <button type="submit"> ENVIAR</button>
+                </div>
+            </form>
+    
+            <ul class="footer__social" >
+                <li>
+                    <a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                        i class="fab fa-facebook"></i>
+                    </a>
+                      
+                </li>
+
+
+                <li>
+                    <a href=" http://www.twitter.com/ " target="_blank" rel="noopener noreferrer"
+                        i class="fab fa-twitter"></i>
+                    </a>
+    
+                    <a href= " http://www.youtube.com/ " target="_blank" rel="noopener noreferrer"
+                    i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            </li>
+        </div>
+        
         <hr />
         <p>
-        <small>Studi<span>ON</span> -todos direitos reservados.</small>
+            <small>Studi<span>ON</span> -todos direitos reservados.</small>
         </p>
     </footer>
+
+
+    <script src="https://kit.fontawesome.com/37fef3bb91.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

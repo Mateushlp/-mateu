@@ -1,43 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght0400;700&display=swap');
-
-*{
-    box-sizing: border-box;
-}
-
-:root {
-    --color-primary: #ffc500;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-ul{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-}
-li{
-    margin-right: 0.625rem; 
-}
-.navbar{
-    position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    align-items: center;
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    padding: 0 1rem ;
-
-    background-color: black;
-    color: white;
-}
-.navbar_links{
-    justify-self: end;
-}
-.navbar_links a{
-    color: white;
-    text-decoration: none;
-}
-.navbar_links a:hover{
-color: #ffc500;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght0300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css');
+@import './css/_variables.css';
+@import'./css/_base.css';
+@import'./css/_navbar.css';
+@import'./css/_utils.css';
+@import'./css/home.css';
+@import'./css/contact.css';
+@import'./css/_footer.css'
