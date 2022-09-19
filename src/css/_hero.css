@@ -1,0 +1,9 @@
+.hero{
+    position: relative;
+    height: 34.625rem;
+}
+.hero_background{
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+}
